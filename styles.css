@@ -122,9 +122,12 @@ h6 {
 
 /* BUTTONS */
 button {
+    display: block;
     padding: .5rem 1rem;
     background-color: transparent;
     border: none;
+    cursor: pointer;
+    box-shadow: 3px 3px 3px hsla(0, 0%, 0%, 0.5);
 }
 
 .btn__login {
