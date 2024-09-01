@@ -15,15 +15,15 @@
 <body>
     <div class="wrapper">
         <!-- Header -->
-        <header>
+        <header class="header">
             <div class="logo">
-                <a href=""><img src="./assets/images/logo-bookmark.svg" alt="bookmark logo"></a>
+                <a href="#"><img src="./assets/images/logo-bookmark.svg" alt="bookmark logo"></a>
             </div>
-            <div>
+            <div class="hamburger-menu">
                 <img src="./assets/images/icon-hamburger.svg" alt="">
                 <img src="./assets//images/icon-close.svg" alt="">
             </div>
-            <nav class="navigation__primary">
+            <nav class="nav__primary">
                 <ul class="nav__list">
                     <li class="nav__item">
                         <a class="nav__link" href="#features">Features</a>
@@ -34,17 +34,19 @@
                     <li class="nav__item">
                         <a class="nav__link" href="#features">Contact</a>
                     </li>
-                    <button class="btn__login">Login</button>
+                    <button class="btn btn__login">Login</button>
                 </ul>
             </nav>
         </header>
-        <main>
+
+        <!-- Main -->
+        <main class="main">
             <!-- Sections -->
             <!-- Hero -->
-            <section id="bookmark" class="section section__hero">
+            <section id="hero" class="section section__hero">
                 <div>
-                    <h1> A Simple Bookmark Manager</h1>
-                    <p> 
+                    <h1 class="section__title"> A Simple Bookmark Manager</h1>
+                    <p class="subtitle"> 
                         A clean and simple interface to organize your favourite websites. Open a new 
                         browser tab and see your sites load instantly. Try it for free.
                     </p>
@@ -211,7 +213,7 @@
             <div>
                 <div>
                     <a><img src="./assets/images/logo-bookmark.svg" alt=""></a>
-                    <nav class="navigation__secondary">
+                    <nav class="nav__sec">
                         <ul class="nav-sec__list">
                             <li class="nav-sec__item"><a class="nav-sec__link" href="#">Features</a></li>
                             <li class="nav-sec__item"><a class="nav-sec__link" href="#">Pricing</a></li>

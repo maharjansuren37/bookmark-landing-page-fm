@@ -14,6 +14,10 @@
     --fw-500: 500;
 }
 
+@media and (min-width: 600px) {
+    
+}
+
 /* Modern CSS Reset 29/11/2022 Josh Comeau*/
 /* use a more-intuitive box-sizing model.*/
 *,
@@ -76,5 +80,5 @@ body {
 
 /* UTILITIES */
 .wrapper {
-    
+
 }
