@@ -1,6 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
 :root {
-    
+    --clr-soft-blue: hsl(231, 69%, 60%);
+    --clr-soft-red: hsl(0, 94%, 66%);
+    --clr-neutral-blue: hsl(229, 8%, 60%);
+    --clr-neutral-dark-blue: hsl(229, 31%, 21%);
+
+    --fs-body: 1.125rem;
+
+    --ff-primary: "Rubik", sans-serif;
+
+    --fw-400: 400;
+    --fw-500: 500;
 }
 
+/* Modern CSS Reset 29/11/2022 Josh Comeau*/
+/* use a more-intuitive box-sizing model.*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* remove default margin and padding */
+* {
+    margin: 0;
+    padding: 0; /*added by myself*/
+    font: inherit;
+}
+
+/* remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+    list-style: none;
+}
+
+/* set core root defaults */
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+/* allow percentage-based heights in the application */
+html, body {
+    min-height: 100%;
+    overflow-x: hidden;
+}
+
+/* typographic tweaks 1.accessible line-height 2.improve text rendering */
+body {
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+
+/* improve media defaults */
+img, 
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+/* GENERAL SETTINGS */
+body {
+    font-family: var(--ff-primary);
+    font-size: var(--fs-body);
+}
+
+/* HEADER */
+
+/* FOOTER */
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+/* UTILITIES */
+.wrapper {
+    
+}
