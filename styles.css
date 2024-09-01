@@ -5,18 +5,40 @@
     --clr-soft-red: hsl(0, 94%, 66%);
     --clr-neutral-blue: hsl(229, 8%, 60%);
     --clr-neutral-dark-blue: hsl(229, 31%, 21%);
-
-    --fs-body: 1.125rem;
-
+    
     --ff-primary: "Rubik", sans-serif;
+    
+    /* font sizes */
+    /* scale for 1.2 */
+    --fs-1: 1rem;
+    --fs-2: 1.2rem;
+    --fs-3: 1.44rem;
+    --fs-4: 1.72rem;
+    --fs-5: 2.074rem;
+    --fs-6: 2.488rem;
+
+    --fs-body: var(--fs2);
 
     --fw-400: 400;
     --fw-500: 500;
+
+    --sizes-100: 1rem;
 }
 
-@media and (min-width: 600px) {
-    
+@media (min-width: 600px) {
+    :root {
+        /* scale for 1.33 */
+        --fs-1: 1rem;
+        --fs-2: 1.333rem;
+        --fs-3: 1.777rem;
+        --fs-4: 2.369rem;
+        --fs-5: 3.157rem;
+        --fs-6: 4.209rem;
+
+        --fs-body: var(--fs2);
+    }
 }
+
 
 /* Modern CSS Reset 29/11/2022 Josh Comeau*/
 /* use a more-intuitive box-sizing model.*/
@@ -72,6 +94,49 @@ body {
     font-size: var(--fs-body);
 }
 
+/* TYPOGRAPHY */
+h1 {
+    font-size: var(--fs-6);
+    font-weight: var(--fw-500);
+}
+
+h2 {
+    font-size: var(--fs-5);
+}
+
+h3 {
+    font-size: var(--fs-3);
+}
+
+h4 {
+    font-size: var(--fs-2);
+}
+
+h5 {
+    font-size: var(--fs-2);
+}
+
+h6 {
+    font-size: var(--fs-1);
+}
+
+/* BUTTONS */
+button {
+    padding: .5rem 1rem;
+    background-color: transparent;
+    border: none;
+}
+
+.btn__login {
+    background-color: var(--clr-soft-red);
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 4px;
+}
+
+/* HAMBURGER MENU */
+
 /* HEADER */
 
 /* FOOTER */
@@ -80,5 +145,6 @@ body {
 
 /* UTILITIES */
 .wrapper {
-
+    max-width: 1100px;
+    margin-inline: auto;;
 }
