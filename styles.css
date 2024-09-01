@@ -92,6 +92,7 @@ svg {
 body {
     font-family: var(--ff-primary);
     font-size: var(--fs-body);
+    min-height: 100vh;
 }
 
 /* TYPOGRAPHY */
@@ -149,8 +150,15 @@ button {
     display: block;
 
     position: absolute;
-    top: 2.2rem;
+    z-index: 999;
+    top: 2rem;
     right: 2rem;
+
+    cursor: pointer;
+}
+
+.hamburger-menu__close {
+    display: block;
 }
 
 /* HEADER */
@@ -162,10 +170,34 @@ button {
     padding-block: 2rem;
 }
 
-.nav-primary .nav-primary__list {
+.logo__light {
     display: none;
+    position: absolute;
+    z-index: 1;
+}
+
+.nav-primary {
+    background-color: var(--clr-neutral-dark-blue);
+    display: none;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    gap: 2.5rem;
+    gap: 2rem;
+
+    min-height: 100vh;
+    position: absolute;
+    inset: 0;
+}
+
+.show {
+    display: flex;
+}
+
+.nav-primary .nav-primary__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
 }
 
 .nav-primary .nav__link {
@@ -178,6 +210,11 @@ button {
     color: hsla(0, 0%, 0%, 1);
 }
 
+.nav-primary__social {
+    display: flex;
+    gap: 2rem;
+}
+
 @media screen and (min-width: 700px) {
     .hamburger-menu {
         display: none;
@@ -188,8 +225,6 @@ button {
     }
 }
 /* FOOTER */
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
 
 /* UTILITIES */
 .wrapper {
