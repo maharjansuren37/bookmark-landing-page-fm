@@ -19,15 +19,21 @@
             <div class="logo__blue">
                 <a href="#"><img src="./assets/images/logo-bookmark.svg" alt="bookmark logo"></a>
             </div>
-            <div class="logo__light">
-                <a href="#"><img src="./assets/images/logo-bookmark-light.svg" alt=""></a>
-            </div>
-            <div class="hamburger-menu">
-                <img class="hamburger-menu__open" src="./assets/images/icon-hamburger.svg" alt="">
-                <img class="hamburger-menu__close" src="./assets//images/icon-close.svg" alt="">
-            </div>
-            <nav class="nav-primary">
-                <ul role="list" class="nav-primary__list">
+            <button 
+                aria-controls="primary-navigation" 
+                aria-expanded="false"
+                class="mobile-menu-toggle">
+                <span class="sr-only" aria-hidden="true">Menu</span>
+            </button>
+            <nav 
+                id="primary-navigation" 
+                class="primary-navigation" 
+                data-visible="false"
+            >
+                <div class="logo__light">
+                    <a href="#"><img src="./assets/images/logo-bookmark-light.svg" alt=""></a>
+                </div>
+                <ul role="list" class="primary-navigation__list">
                     <li class="nav__item">
                         <a class="nav__link" href="#features">Features</a>
                     </li>
@@ -40,7 +46,7 @@
                     <button class="btn btn__login">Login</button>
                 </ul>
 
-                <ul role="list" class="nav-primary__social">
+                <ul role="list" class="primary-navigation__social-list">
                     <li><a href="#"><img src="./assets/images/icon-facebook.svg" alt=""></a></li>
                     <li><a href="#"><img src="./assets/images/icon-twitter.svg" alt=""></a></li>
                 </ul>
